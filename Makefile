@@ -18,7 +18,7 @@ lstprintelemsizes memalloc memccpy memchr memcmp memcpy memdel memmove memset \
 putchar_fd putchar putendl putnbr_fd putnbr putstr_fd putstr strcat strchr \
 strclr strcmp strcount strcpy strdel strdup strequ striter strjoin strlcat \
 strlen strmap strmapi strncat strncmp strncpy strnequ strnew strnstr strrchr \
-strsplit strstr strsub strtrim tolower toupper putendl_fd striteri
+strsplit strstr strsub strtrim tolower toupper putendl_fd striteri get_next_line
 CFILE = $(SOURCES:%=ft_%.c)
 OUT = $(SOURCES:%=ft_%.o)
 INCLUDES = ./libft.h

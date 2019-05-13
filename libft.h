@@ -17,6 +17,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# define BUFF_SIZE 1000
+
 typedef struct		s_list
 {
 	void			*content;
@@ -24,6 +26,14 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct	s_gnl_list
+{
+    int					fd;
+    char				*content;
+    struct s_gnl_list	*next;
+}				t_gnl_list;
+
+int                 get_next_line(const int fd, char **line);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_digcount(int n);
